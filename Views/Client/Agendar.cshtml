@@ -1,0 +1,149 @@
+﻿@using Newtonsoft.Json;
+
+@{ }
+
+
+<div class="row">
+    <div class="col-lg-6">
+        <form>
+            <div class="ibox ">
+                <div class="ibox-content">
+                    <div id="wizard">
+                        <h1>Cidade</h1>
+                        <div class="step-content">
+
+                            <!-- Serviço -->
+                            <div class="form-group m-b-lg">
+                                <h4>Serviço</h4>
+                                <p class="help-block">Carteira de Identidade</p>
+                            </div>
+
+                            <!-- Cidade -->
+                            <div class="form-group m-b-lg">
+                                <h4>Cidade</h4>
+                                @Html.DropDownList("municipio", null, "Selecione", new { @class = "form-control chosen-select", id = "municipio" })
+                            </div>
+
+                        </div>
+
+                        <h1>Local/Horário</h1>
+                        <div class="step-content">
+                            <div class="row">
+                                <div class="col-lg-4">
+
+                                    <!-- Serviço -->
+                                    <div class="form-group">
+                                        <h4 class="mb-0">Serviço</h4>
+                                        <p class="help-block">Carteira de Identidade</p>
+                                    </div>
+
+                                    <!-- Cidade -->
+                                    <div class="form-group">
+                                        <h4 class="mb-0">Cidade</h4>
+                                        <p class="help-block">Porto Alegre</p>
+                                    </div>
+
+                                    <!-- Locais -->
+                                    <div class="form-group">
+                                        <h4 class="mb-0">Selecione um Local</h4>
+                                        <div class="list-group local-atentimento" id="list-tab" role="tablist">
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-0">Departamento de Identificação</h5>
+                                                </div>
+                                                <small>Demetrio Ribeiro, 112</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-0">Tudo Fácil - Zona Norte</h5>
+                                                </div>
+                                                <small>Rua 4 de julho, 3481</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-0">Tudo Fácil - Zona Sul</h5>
+                                                </div>
+                                                <small>Luiz de Camões, 800</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-0">Departamento de Identificação</h5>
+                                                </div>
+                                                <small>Demetrio Ribeiro, 112</small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <!-- Dias disponíveis -->
+                                    <div class="form-group">
+                                        <h4>Selecione um dia</h4>
+                                        <div class="data-disponivel"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <!-- Dias disponíveis -->
+                                    <div class="form-group">
+                                        <h4>Selecione um horário</h4>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="list-group horario-atentimento" id="list-tab" role="tablist">
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:00</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:15</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:30</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#">08:45</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        @*<div class="col-lg-4 m-l-n">
+                                            <select class="form-control">
+                                                <option>08:00</option>
+                                                <option>08:15</option>
+                                                <option>08:30</option>
+                                                <option>08:45</option>
+                                            </select>
+                                        </div>*@
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1>Dados Pessoais</h1>
+                        <div class="step-content">
+
+                        </div>
+
+                        <h1>Confirmação</h1>
+                        <div class="step-content">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Styles {
+    @Styles.Render("~/Content/css/app/agendar.css")
+}
+@section Scripts {
+    @Scripts.Render("~/Scripts/app/agendar.js")
+}

@@ -1,0 +1,87 @@
+﻿h3, h4, h5{
+    font-weight:700;
+}
+.ibox-content {
+    border: 0;
+}
+
+.datepicker table tr td.day {
+    font-weight: bold;
+    color: #2f4050;
+}
+
+.datepicker table tr td.disabled {
+    font-weight: normal;
+    color: #ccc;
+}
+
+.datepicker table tr td.new, .datepicker table tr td.old {
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.datepicker {
+    border: 1px solid #dee2e6;
+    padding: 11px 15px;
+    border-radius: 0;
+}
+.datepicker table tr td, .datepicker table tr th {
+    height: 34px;
+}
+.datepicker-switch {
+    font-size: 15px;
+}
+.datepicker table {
+    width: 100%;
+}
+.datepicker-inline {
+    width: inherit;
+}
+
+.wizard > .content {
+    border: solid 1px #dee2e6;
+    background: #fff;
+}
+.wizard > .content > .body {
+    padding: 1.5% 2.5%;
+    width: 100%;
+}
+.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+    font-size: 15px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group.horario-atentimento .list-group-item {
+    border: none;
+}
+
+.horario-atentimento.list-group {
+    border: 1px solid #dee2e6;
+    height: 264px;
+    width: 145px;
+    overflow: auto;
+}
+
+.local-atentimento.list-group {
+    border: 1px solid #dee2e6;
+    background: #f9f9f9;
+    height: 168px;
+    overflow: auto;
+}
+.local-atentimento .list-group-item {
+    padding: 7px 15px;
+    border: 2px solid #fff;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+    background-color: #e7eaec;
+}
+
+div.steps ul > li > a {
+    cursor: default;
+    pointer-events: none;
+}

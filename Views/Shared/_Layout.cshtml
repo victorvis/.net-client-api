@@ -1,0 +1,53 @@
+﻿<!--
+*
+*  INSPINIA - Responsive Admin Theme
+*  version 2.9.3
+*
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Api Client</title>
+
+    @Styles.Render("~/Content/css/bootstrap.min.css")
+    @Styles.Render("~/Content/font-awesome/css/font-awesome.css")
+    @Styles.Render("~/Content/css/plugins/steps/jquery.steps.css")
+    @Styles.Render("~/Content/css/plugins/datapicker/datepicker3.css")
+    @Styles.Render("~/Content/css/plugins/toastr/toastr.min.css")
+    @Styles.Render("~/Scripts/plugins/gritter/jquery.gritter.css")
+    @Styles.Render("~/Content/css/animate.css")
+    @Styles.Render("~/Content/css/style.css")
+
+    @if (IsSectionDefined("Styles"))
+    {
+        @RenderSection("Styles", required: false)
+    }
+</head>
+
+<body class="" >
+
+    @RenderBody()
+
+    <!-- Mainly scripts -->
+    @Scripts.Render("~/Scripts/jquery-3.1.1.min.js")
+    @Scripts.Render("~/Scripts/popper.min.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+    @Scripts.Render("~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js")
+    @Scripts.Render("~/Scripts/plugins/steps/jquery.steps.min.js")
+    @Scripts.Render("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")
+    @Scripts.Render("~/Scripts/plugins/datapicker/bootstrap-datepicker.pt-BR.min.js")
+
+    <!-- Custom and plugin javascript -->
+    @Scripts.Render("~/Scripts/inspinia.js")
+    @Scripts.Render("~/Scripts/plugins/pace/pace.min.js")
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
